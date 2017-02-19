@@ -27,3 +27,5 @@ var server = http.createServer(function(request,response){
     holidayInfo = JSON.stringify(holidayInfo);
     response.end(holidayInfo);
 }).listen(portNumber);
+
+console.log("Listening on port " + portNumber);
