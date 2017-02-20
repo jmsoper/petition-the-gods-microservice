@@ -24,6 +24,7 @@ var server = http.createServer(function(request,response){
       }
       holidayInfo.holidayText = calendar[month][date];
     }
+    console.log(holidayInfo);
 
     holidayInfo = JSON.stringify(holidayInfo);
     response.end(holidayInfo);
