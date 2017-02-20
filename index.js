@@ -4,6 +4,7 @@ var calendar = require('./calendar');
 var portNumber = 3000;
 
 var server = http.createServer(function(request,response){
+    response.setHeader('Content-Type', 'application/json');
     var calendarType = typeof calendar;
     var givenUrl = request.url.slice(1);
     var dateInfo = givenUrl.split("-");
